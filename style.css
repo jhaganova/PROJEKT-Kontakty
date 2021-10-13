@@ -9,9 +9,109 @@ body {
 
 /* ---------------------------------------------------- */
 
-/*
-Breakpointy
+
+.contacts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.contacts h1 {
+	width: 100%;
+	text-align: center;
+}
+
+.contactbox {
+	border: solid 1px #cacaca;
+	border-radius: 10px;
+	box-shadow: 0 1px 2px #cacaca;
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 20px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content img {
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	object-fit: cover;
+}
+
+.content h2 {
+	margin-bottom: 0;
+}
+
+.content p,
+.content h2 {
+	text-align: center;
+}
+
+
+@media screen and (min-width: 540px) {
+	
+	
+	.contactbox {
+		flex: 0 0 calc(50% - 20px);
+	}
+
+	.content {
+		flex-wrap: nowrap;
+		flex-direction: row;
+	}
+
+	.content img {
+		margin-right: 16px;
+		width: 80px;
+		height: 80px;
+	}
+
+	.text {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.content h2,
+	.content p {
+		text-align: start;
+	}
+
+}	
+
+@media screen and (min-width: 960px) {
+
+	.contactbox {
+		flex: 0 0 calc(25% - 20px);
+		align-items: center;
+	}
+	
+	.content {
+		flex-direction: column;
+	}
+
+	.content img {
+		width: 120px;
+		height: 120px;
+		margin: 0;
+	}
+
+	.content p,
+	.content h2 {
+	text-align: center;
+}
+
+
+
+}
+
+
+
+/* Breakpointy
 Mobil   0 - 539px
 Tablet  540px - 959px (čti jako 540px a víc)
-PC      960px a víc
-*/
+PC      960px a víc */
